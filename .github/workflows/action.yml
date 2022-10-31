@@ -6,7 +6,7 @@ on:
       - main  # default branch
 jobs:
   do_action:
-    runs-on: daoTrip
+    runs-on: self-hosted
     steps:
       - name: run notifyAction
         uses: daoAction/wait/@main
