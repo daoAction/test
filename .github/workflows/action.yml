@@ -1,0 +1,14 @@
+name: Action
+
+on:
+  push:
+    branches:
+      - main  # default branch
+jobs:
+  do_action:
+    runs-on: self-hosted
+    steps:
+      - name: run notifyAction
+        uses: daoAction/wait/@main
+        with:
+          milliseconds: 39999
